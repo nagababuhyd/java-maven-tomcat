@@ -24,11 +24,11 @@ sudo apt install maven -y
 clone the repo
 git clone https://github.com/nagababuhyd/java-maven-tomcat/
    48  cd java-maven-tomcat/
-   53  mvn package
+   53  mvn package # creates build file in target folder dptweb-1.0 dptweb-1.0.war
    56  cd target
    67  cp -r dptweb-1.0 dptweb-1.0.war  /opt/tomcat/webapps/
-cd /opt/tomcat/bin
-./catalina.sh start
+       cd /opt/tomcat/bin
+       ./catalina.sh start # start apache tomcat server
 
 access application ip:8080/dptweb-1.0
 
